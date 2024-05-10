@@ -1,16 +1,16 @@
 # Easing-Lib
 
 class Styles {
-  linear
-  sine
-  back
-  quad
-  quart
-  quint 
-  bounce
-  elastic
-  exponential
-  circular
+  linear,
+  sine,
+  back,
+  quad,
+  quart,
+  quint,
+  bounce,
+  elastic,
+  exponential,
+  circular,
   cubic
 }
 
