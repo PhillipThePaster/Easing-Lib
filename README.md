@@ -1,2 +1,2 @@
 # Easing-Lib
-Easing Library like Roblox 
+Currently no ( In / Out / InOut ) in Progress 
