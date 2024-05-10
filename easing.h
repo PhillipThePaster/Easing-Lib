@@ -30,7 +30,7 @@ public:
     static float quint(float t) {
         return pow(t, 5);
     }
-    // yes i know this is shitcode
+
     static float bounce(float t) {
         if (t < 1 / 2.75)
             return 7.5625 * t * t;
@@ -57,5 +57,20 @@ public:
 
     static float cubic(float t) {
         return t * t * t;
+    }
+
+    static float in(float t, float (*func)(float)) {
+        return func(t);
+    }
+
+    static float out(float t, float (*func)(float)) {
+        return 1 - func(1 - t);
+    }
+
+    static float inout(float t, float (*func)(float)) {
+        if (t < 0.5)
+            return 0.5 * func(2 * t);
+        else
+            return 0.5 * (2 - func(2 * (1 - t)));
     }
 };
