@@ -30,7 +30,7 @@ public:
     static float quint(float t) {
         return pow(t, 5);
     }
-
+    // yes i know this is shitcode
     static float bounce(float t) {
         if (t < 1 / 2.75)
             return 7.5625 * t * t;
